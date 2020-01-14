@@ -1,0 +1,59 @@
+<div class="authentication" *ngIf="!this.afservice.login">
+    <div class="container-fluid layer">
+        <div class="row clearfix">
+            <div class="col-lg-8 col-md-12 col-sm-12">
+                <div class="l-detail">
+                    <h5>Bienvenido</h5>
+                    <h1>
+                        Sistema de Gestión Integral
+                        <span>SGI</span>
+                    </h1>
+                    <h3></h3>
+                    <p>
+                        Los integrantes de la UPPE, sabemos que el prestigio de nuestra Institución depende de la
+                        satisfacción de los alumnos, por eso desarrollamos nuestros servicios educativos, por medio de
+                        un Sistema de Gestión Integral que, dentro del contexto, nos apoye
+                        en el cumplimiento de los requisitos de las fuentes aplicables, en la prevención de la
+                        contaminación, identificando la magnitud e impacto de los distintos aspectos
+                        ambientales,manteniendo la mejora continua en el desempeño.
+                        <br><br> <b><i>M. A. D.</i></b>
+                        <br><b><i>Alma Verónica López López</i></b>
+                        <br> <b>Rectora</b>
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 fix-margin">
+                <div class="card cardLogin">
+                    <h4 class="l-login">Inicia sesión</h4>
+                    <form class="" id="sign_in">
+                        <div class="form-group form-float">
+                            <div>
+                            </div>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="rememberme" id="rememberme" class="filled-in chk-col-cyan">
+                        </div>
+                        <button type="button" class="btn btn-addon btn-raised waves-effect" (click)="signIn()">
+                            <img src="https://common-admin-cdn.atlassian.com/atlassian-id/front-end/2.6.11/static/media/google-logo.c21ca9d1.svg"
+                                alt="" style="height: 18px; margin-right: 8px; vertical-align: middle; width: 18px;">
+                            Accede con tu correo
+                        </button>
+
+                        <div class="form-group form-float mt-50p">
+                            <div>
+                                <ul class="list-unstyled l-menu">
+                                    <li>
+                                        Versión 1.2.0
+                                    </li>
+                                    <li>
+                                        Universidad Politécnica de Pénjamo© {{year}}
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

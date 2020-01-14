@@ -1,0 +1,64 @@
+<nav class="navbar" [hidden]="!this.afs.login">
+    <div class="col-12">
+        <div class="navbar-header">
+            <a class="bars">
+            </a>
+            <a class="navbar-brand" [routerLink]="['dashboard']">
+                <img src="./assets/img/logo_white.png" width="90" height="45" alt="User" />
+            </a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                <span class="userName">{{user_name}}</span>
+            </li>
+            <li class="dropdown">
+                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                    <span class="thumb-sm avatar">
+            <img src="{{user_photo}}" alt="photoURL">
+          </span>
+                    <div class="notify">
+                        <span class="heartbit"></span>
+                        <span class="point"></span>
+                    </div>
+
+                </a>
+                <ul class="dropdown-menu">
+                    <li class="header">{{user_email}}</li>
+                    <li class="body">
+                        <ul class="menu list-unstyled">
+                            <li>
+                                <a href="ci.uppenjamo.edu.mx/" target="_blank">
+                                    <div class="icon-circle bg-blue">
+                                        <i class="material-icons">assignment</i>
+                                    </div>
+                                    <div class="menu-info">
+                                        <h4>Sistema de Control Interno</h4>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://mail.google.com/a/uppenjamo.edu.mx" target="_blank">
+                                    <div class="icon-circle bg-orange">
+                                        <i class="material-icons">email</i>
+                                    </div>
+                                    <div class="menu-info">
+                                        <h4>Correo institucional</h4>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a (click)="signOut()">
+                                    <div class="icon-circle bg-red">
+                                        <i class="material-icons">cancel</i>
+                                    </div>
+                                    <div class="menu-info">
+                                        <h4>Cerrar sesión</h4>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                </ul>
+                </li>
+        </ul>
+    </div>
+</nav>

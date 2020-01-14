@@ -1,0 +1,203 @@
+<aside id="leftsidebar" class="sidebar" [hidden]="!this.afs.login">
+    <!-- User Info -->
+    <div class="user-info">
+        <div class="info-container">
+            <div class="name" data-toggle="dropdown">UPPÉNJAMO</div>
+            <div class="email">Sistema de Gestión Integral</div>
+        </div>
+    </div>
+    <!-- #User Info -->
+    <!-- Menu -->
+    <div class="menu">
+        <ul class="list">
+            <li class="header">MENÚ PRINCIPAL</li>
+            <!-- DIRECTIVOS -->
+            <li>
+                <a class="menu-toggle">
+                    <span>
+                        <strong class="title-sidebar">Calidad</strong>
+                    </span>
+                </a>
+                <ul class="ml-menu">
+                    <li>
+                        <a [routerLinkActive]="['lnkActive']" [routerLink]="['manual_calidad']">
+                            MC Manual de calidad
+                        </a>
+                    </li>
+                    <li>
+                        <a [routerLinkActive]="['lnkActive']" [routerLink]="['oferta_educativa']">
+                            PC1 Oferta educativa
+                        </a>
+                    </li>
+                    <li>
+                        <a [routerLinkActive]="['lnkActive']" [routerLink]="['seguimiento_egreso']">
+                            PC2 Seguimiento al egreso
+                        </a>
+                    </li>
+                    <li>
+                        <a [routerLinkActive]="['lnkActive']" [routerLink]="['control_salidas_no_conformes']">
+                            PC3 Control de las salidas no conformes
+                        </a>
+                    </li>
+                    <li>
+                        <a [routerLinkActive]="['lnkActive']" [routerLink]="['medicion_satisfaccion_cliente']">
+                            PC4 Medición de la satisfacción del cliente
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu-toggle">
+                            <span><strong>PO1 Enseñanza y aprendizaje</strong></span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a [routerLinkActive]="['lnkActive']" [routerLink]="['gestion_asignatura']">
+                                    <span>PO1A Gestión de la asignatura</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a [routerLinkActive]="['lnkActive']" [routerLink]="['evaluacion_aprendizaje']">
+                                    <span>PO1B Evaluación del aprendizaje</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a [routerLinkActive]="['lnkActive']"
+                                    [routerLink]="['capacitacion_desarrollo_docente']">
+                                    <span>PO1C Capacitación y desarrollo docente</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a [routerLinkActive]="['lnkActive']"
+                                    [routerLink]="['programa_institucional_tutorias']">
+                                    <span>PO1D Programa institucional de tutorías</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a [routerLinkActive]="['lnkActive']" [routerLink]="['asesorias']">
+                                    <span>PO1E Asesorías</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a [routerLinkActive]="['lnkActive']" [routerLink]="['servicio_laboratorio']">
+                                    <span>PO1F Servicio de laboratorio</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a [routerLinkActive]="['lnkActive']" [routerLink]="['servicio_social']">
+                                    <span>PO1G Servicio Social</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a [routerLinkActive]="['lnkActive']" [routerLink]="['estancia_estadia']">
+                                    <span>PO1H Estancias y Estadías</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a [routerLinkActive]="['lnkActive']" [routerLink]="['servicios_escolares']">
+                            <span><strong>PO2 Servicios escolares</strong></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a [routerLinkActive]="['lnkActive']" [routerLink]="['titulacion']">
+                            <span><strong>PO3 Titulación</strong></span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <!-- INTEGRAL -->
+            <li>
+                <a class="menu-toggle">
+                    <span>
+                        <strong class="title-sidebar">Integral</strong>
+                    </span>
+                </a>
+                <ul class="ml-menu">
+                    <li>
+                        <a [routerLinkActive]="['lnkActive']" [routerLink]="['creacion_informacion_documentada']">
+                            PI1 Creación de información documentada
+                        </a>
+                    </li>
+                    <li>
+                        <a [routerLinkActive]="['lnkActive']" [routerLink]="['control_informacion_documentada']">
+                            PI2 Control de información documentada
+                        </a>
+                    </li>
+                    <li>
+                        <a [routerLinkActive]="['lnkActive']" [routerLink]="['revision_direccion']">
+                            PI3 Revisión por la dirección
+                        </a>
+                    </li>
+                    <li>
+                        <a [routerLinkActive]="['lnkActive']" [routerLink]="['analisis_riesgos_oportunidades']">
+                            PI4 Análisis de riesgos y oportunidades
+                        </a>
+                    </li>
+                    <li>
+                        <a [routerLinkActive]="['lnkActive']" [routerLink]="['mantenimiento_infraestructura']">
+                            PI5 Mantenimiento de infraestructura
+                        </a>
+                    </li>
+                    <li>
+                        <a [routerLinkActive]="['lnkActive']" [routerLink]="['tecnologias_informacion']">
+                            PI6 Tecnologías de Información
+                        </a>
+                    </li>
+                    <li>
+                        <a [routerLinkActive]="['lnkActive']" [routerLink]="['centros_computo']">
+                            PI6A Centros de cómputo
+                        </a>
+                    </li>
+                    <li>
+                        <a [routerLinkActive]="['lnkActive']" [routerLink]="['clima_laboral']">
+                            PI7 Clima laboral
+                        </a>
+                    </li>
+                    <li>
+                        <a [routerLinkActive]="['lnkActive']" [routerLink]="['competencia_toma_conciencia']">
+                            PI8 Competencia y toma de conciencia
+                        </a>
+                    </li>
+                    <li>
+                        <a [routerLinkActive]="['lnkActive']" [routerLink]="['comunicacion']">
+                            PI9 Comunicación
+                        </a>
+                    </li>
+                    <li>
+                        <a [routerLinkActive]="['lnkActive']" [routerLink]="['gestion_quejas_partes_interesadas']">
+                            PI10 Gestión de quejas de partes interesadas
+                        </a>
+                    </li>
+                    <li>
+                        <a [routerLinkActive]="['lnkActive']" [routerLink]="['control_procesos_productos_servicios']">
+                            PI11 Control de procesos, productos y servicios
+                        </a>
+                    </li>
+                    <li>
+                        <a [routerLinkActive]="['lnkActive']" [routerLink]="['auditorias_internas']">
+                            PI12 Auditorías internas
+                        </a>
+                    </li>
+                    <li>
+                        <a [routerLinkActive]="['lnkActive']" [routerLink]="['acciones_correctivas']">
+                            PI13 Acciones correctivas
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <!-- INTEGRAL -->
+            <li>
+                <a href="d/NMX-CC-9001-IMNC-2015.pdf" target="_blank">
+                    Norma Mexicana IMNC
+                </a>
+            </li>
+            <li>
+                <a href="d/ISO_9001_2015 Fundamentos y vocabulario.pdf" target="_blank">
+                    Norma Internacional ISO9000:2015
+                </a>
+            </li>
+            <!-- Fin menu principal -->
+        </ul>
+    </div>
+    <!-- #Menu -->
+</aside>
